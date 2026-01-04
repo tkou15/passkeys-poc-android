@@ -1,4 +1,4 @@
-package passkeys.poc.app.space.k1t
+package space.k1t.app.passkey.poc
 
 import android.content.Context
 import android.util.Log
@@ -256,3 +256,4 @@ class PasskeyManager(private val context: Context) {
         }
     }
 }
+

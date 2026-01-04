@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "passkeys.poc.app.space.k1t"
+    namespace = "space.k1t.app.passkey.poc"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "passkeys.poc.app.space.k1t"
+        applicationId = "space.k1t.app.passkey.poc"
         minSdk = 28
         targetSdk = 36
         versionCode = 1

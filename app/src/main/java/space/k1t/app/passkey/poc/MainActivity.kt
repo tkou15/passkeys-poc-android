@@ -1,11 +1,11 @@
-package passkeys.poc.app.space.k1t
+package space.k1t.app.passkey.poc
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import passkeys.poc.app.space.k1t.databinding.ActivityMainBinding
+import space.k1t.app.passkey.poc.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -194,3 +194,4 @@ class MainActivity : AppCompatActivity() {
             .show()
     }
 }
+

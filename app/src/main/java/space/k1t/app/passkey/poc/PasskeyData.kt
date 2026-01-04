@@ -1,4 +1,4 @@
-package passkeys.poc.app.space.k1t
+package space.k1t.app.passkey.poc
 
 import android.util.Base64
 import java.security.SecureRandom
@@ -55,3 +55,4 @@ data class AuthenticationResult(
     val credentialId: String? = null,
     val error: String? = null
 )
+

@@ -39,7 +39,7 @@
 
 #### ドメイン設定
 
-本番環境で使用する場合は、[`PasskeyManager.kt`](app/src/main/java/test/passkeys/app/space/k1t/PasskeyManager.kt:30) の以下の定数を実際のドメインに変更してください：
+本番環境で使用する場合は、[`PasskeyManager.kt`](app/src/main/java/space/k1t/app/passkey/poc/PasskeyManager.kt:30) の以下の定数を実際のドメインに変更してください：
 
 ```kotlin
 private const val RP_ID = "passkeys-test.example.com"
@@ -61,7 +61,7 @@ Passkeysを使用するには、ドメインとアプリを紐付けるために
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "test.passkeys.app.space.k1t",
+      "package_name": "space.k1t.app.passkey.poc",
       "sha256_cert_fingerprints": [
         "8C:2A:23:87:D3:86:58:60:7D:82:E4:86:33:59:F0:D2:3F:F0:2D:79:45:AC:93:88:2E:79:AC:9A:C6:01:98:AB"
       ]
@@ -76,7 +76,7 @@ Passkeysを使用するには、ドメインとアプリを紐付けるために
    - URL例: `https://your-domain.com/.well-known/assetlinks.json`
    - Content-Type: `application/json`
    
-2. [`PasskeyManager.kt`](app/src/main/java/test/passkeys/app/space/k1t/PasskeyManager.kt:30) の `RP_ID` を実際のドメインに変更
+2. [`PasskeyManager.kt`](app/src/main/java/space/k1t/app/passkey/poc/PasskeyManager.kt:30) の `RP_ID` を実際のドメインに変更
 
 3. 本番用の署名証明書を使う場合は、そのSHA-256フィンガープリントに更新
    ```bash
@@ -92,9 +92,9 @@ Passkeysを使用するには、ドメインとアプリを紐付けるために
 
 ### メインファイル
 
-- [`MainActivity.kt`](app/src/main/java/test/passkeys/app/space/k1t/MainActivity.kt) - メインアクティビティ（UI制御）
-- [`PasskeyManager.kt`](app/src/main/java/test/passkeys/app/space/k1t/PasskeyManager.kt) - Passkey登録・認証ロジック
-- [`PasskeyData.kt`](app/src/main/java/test/passkeys/app/space/k1t/PasskeyData.kt) - データクラスとユーティリティ
+- [`MainActivity.kt`](app/src/main/java/space/k1t/app/passkey/poc/MainActivity.kt) - メインアクティビティ（UI制御）
+- [`PasskeyManager.kt`](app/src/main/java/space/k1t/app/passkey/poc/PasskeyManager.kt) - Passkey登録・認証ロジック
+- [`PasskeyData.kt`](app/src/main/java/space/k1t/app/passkey/poc/PasskeyData.kt) - データクラスとユーティリティ
 - [`activity_main.xml`](app/src/main/res/layout/activity_main.xml) - UIレイアウト
 
 ### Gradle設定
